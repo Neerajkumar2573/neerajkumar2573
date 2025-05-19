@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Launching Soon | Neerambara </title>
+  <title>Coming Soon</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
   <style>
     * {
@@ -11,15 +11,22 @@
     }
     body {
       height: 100vh;
-      background: linear-gradient(to right, #111827, #1f2937);
+      background-color: #1f1346; /* solid dark blue */
       font-family: 'Poppins', sans-serif;
-      color: #fff;
       display: flex;
       align-items: center;
       justify-content: center;
-      text-align: center;
-      flex-direction: column;
       padding: 20px;
+    }
+    .blur-container {
+      background: rgba(255, 255, 255, 0.1); /* light translucent */
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-radius: 16px;
+      padding: 40px;
+      text-align: center;
+      color: #fff;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
     }
     h1 {
       font-size: 3rem;
@@ -55,12 +62,13 @@
   </style>
 </head>
 <body>
-  <h1>Coming Soon</h1>
-  <p>We’re working on something special — a clothing brand made just for you!</p>
-
-  <form action="https://formsubmit.co/neerajkumar821033@gmail.com" method="POST">
-    <input type="email" name="email" placeholder="Enter your email" required />
-    <button type="submit">Notify Me</button>
-  </form>
+  <div class="blur-container">
+    <h1>Coming Soon</h1>
+    <p>We’re working on something special — a clothing brand made just for you!</p>
+    <form action="https://formsubmit.co/neerajkumar821033@gmail.com" method="POST">
+      <input type="email" name="email" placeholder="Enter your email" required />
+      <button type="submit">Notify Me</button>
+    </form>
+  </div>
 </body>
 </html>
